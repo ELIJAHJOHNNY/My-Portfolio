@@ -89,7 +89,7 @@ const Contact = () => {
               >
                 <span className="flex justify-center items-center">
                   Reach Out
-                  <FaPaperPlane className=" ml-[14px] cursor-pointer text-[#7600bc] dark:text-[#bcc0c0] " />
+                  <FaPaperPlane className=" ml-[14px] text-[#7600bc] dark:text-[#bcc0c0] " />
                 </span>
               </button>
             </div>

@@ -54,7 +54,7 @@ const Works = () => {
       toolUsed1: "React",
       toolUsed3: "Material UI",
       toolUsed4: "Axios",
-      toolUsed5: "Commerce JS API",
+      toolUsed5: "Commerce.JS API",
     },
   ];
 
