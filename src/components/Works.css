@@ -1,0 +1,12 @@
+.switch {
+  transition: height 1s;
+}
+
+.bigCard:hover .MuiCardMedia-img {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.bigCard:hover .purple {
+  height: 100%;
+}

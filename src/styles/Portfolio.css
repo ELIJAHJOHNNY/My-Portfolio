@@ -1,0 +1,103 @@
+/* .work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px;
+} */
+
+/*.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  height: 50%;
+}
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 40px;
+  transition: height 0.5s;
+}
+
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.work:hover img {
+  transform: scale(1.1);
+}
+
+.work:hover .layer {
+  height: 100%;
+} */
+
+/* 
+a:className="link rounded-[50%] bg-white w-[40px] h-[40px] flex items-center justify-center text-[#db1f5e]" */
+
+/* 
+img: className=" rounded-lg cursor-pointer w-full h-full" */
+
+/* 
+work : className="rounded-lg relative hover:transform hover:scale-y-[1.1] transition-transform duration-[0.5s] " */
+/* className="cursor-pointer w-full h-full bg-gradient-to-t from-[#db1f5e] absolute left-0 top-0 flex flex-col text-center px-[40px] items-center justify-center" */
+.work-text {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to top, #db1f5e, #dfa9bd);
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  text-align: center;
+  opacity: 85%;
+  cursor: pointer;
+  padding: 0 40px;
+  transition: height 1s;
+  transition: transform 0.5s;
+}
+
+.work:hover img {
+  transform: scale(1.1);
+}
+
+#layer {
+  transition: height 0.5s;
+}
+
+/*.work:hover img {
+  transform: scale(1.1);
+}
+
+/* .link :hover {
+  color: #fff;
+} */
+
+.work-text-hide {
+  opacity: 0;
+  overflow: hidden;
+  /* display: none; */
+}
+.work-text-hide:hover ::before {
+  display: none;
+}
+
+/* 
+absolute left-0 top-0 bg-gradient-to-t from-[#db1f5e] rounded-lg  items-center justify-center flex-col w-full h-full text-center hidden" */
