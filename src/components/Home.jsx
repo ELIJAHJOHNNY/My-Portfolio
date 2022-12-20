@@ -40,8 +40,8 @@ const Home = () => {
           }}
           startDelay={100}
           cursorColor="transparent"
-          text="Johnny K. Elijah"
-          typeSpeed={70}
+          text="Kugbiyi Elijah J."
+          typeSpeed={60}
         />
       </div>
       {/* <h1 className="font-extrabold text-[70px] font-ms text-center hover:scale-100 ">

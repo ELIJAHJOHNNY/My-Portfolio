@@ -1,5 +1,4 @@
-import React from "react";
-import { useContext } from "react";
+import React, { useState, useContext } from "react";
 import { ThemeContext } from "../App";
 import { BsMoonFill, BsFillSunFill } from "react-icons/bs";
 // import { useNavigate } from "react-router-dom";
@@ -13,6 +12,8 @@ function Header({ Link }) {
   //   const toggleAvatar = () => {
   //     setShowAvatarDropDown(!showAvatarDropDown);
   //   };
+  const [hoverOnLight, setHoverOnLight] = useState(false);
+  const [hoverOnDark, setHoverOnDark] = useState(false);
   const { handleThemeSwitch, theme } = useContext(ThemeContext);
   const navItems = [
     {
@@ -42,9 +43,6 @@ function Header({ Link }) {
     },
   ];
 
-  // const handleNavigate = () => {
-  //   navigate(`AuthRoutes.${navbarMenus.link}`);
-  // };
   return (
     <div>
       <nav className="bg-white/90 dark:bg-black/90 flex items-center justify-between shadow-[#bcc0c0] shadow-md dark:shadow-none w-full h-[10%] z-[100] fixed top-0 left-0">
@@ -132,7 +130,7 @@ function Header({ Link }) {
             </div>
           </Link>
         </div>
-        <ul className="flex xs:hidden md:flex ">
+        <ul className="flex xs:hidden md:flex relative">
           {navItems.map(items => (
             <Link
               to={items.idName}
@@ -159,16 +157,38 @@ function Header({ Link }) {
             className="flex items-center justify-center mr-[40px] text-white font-[Raleway] rounded-[12px] text-[12px] font-[700] tracking-wide "
           >
             <BsMoonFill
+              onMouseEnter={() => setHoverOnDark(true)}
+              onMouseLeave={() => setHoverOnDark(false)}
               className={
                 theme === "dark" ? "hidden" : "text-[#7600bc] w-[25px] h-[25px]"
               }
             />
             <BsFillSunFill
+              onMouseEnter={() => setHoverOnLight(true)}
+              onMouseLeave={() => setHoverOnLight(false)}
               className={
                 theme === "dark" ? "text-[#bcc0c0] w-[25px] h-[25px]" : "hidden"
               }
             />
           </button>
+          <p
+            className={
+              hoverOnLight
+                ? "absolute top-[55px] right-0 px-1 bg-[#bcc0c0] text-[#7600bc] rounded-[8px] text-[12px] font-Raleway"
+                : "hidden"
+            }
+          >
+            Turn on light mode
+          </p>
+          <p
+            className={
+              hoverOnDark
+                ? "absolute top-[55px] right-0 px-1 bg-black text-[#bcc0c0] rounded-[8px] text-[12px] font-Raleway"
+                : "hidden"
+            }
+          >
+            Turn on dark mode
+          </p>
         </ul>
       </nav>
     </div>
