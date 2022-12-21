@@ -30,6 +30,9 @@ const Contact = () => {
       )
       .then(
         result => {
+          setName("");
+          setEmail("");
+          setMessage("");
           console.log(result.text);
           console.log("message sent");
           alert("Message sent: Thank you for reaching out");

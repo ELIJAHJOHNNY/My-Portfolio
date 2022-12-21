@@ -1,6 +1,8 @@
 import React, { useState, useContext } from "react";
+import "./Works.css";
 import { ThemeContext } from "../App";
 import { BsMoonFill, BsFillSunFill } from "react-icons/bs";
+import { FaTimes, FaBars } from "react-icons/fa";
 // import { useNavigate } from "react-router-dom";
 
 function Header({ Link }) {
@@ -15,6 +17,7 @@ function Header({ Link }) {
   const [hoverOnLight, setHoverOnLight] = useState(false);
   const [hoverOnDark, setHoverOnDark] = useState(false);
   const { handleThemeSwitch, theme } = useContext(ThemeContext);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
   const navItems = [
     {
       id: 1,
@@ -45,11 +48,17 @@ function Header({ Link }) {
 
   return (
     <div className="w-[100%] h-[100%]">
-      <nav className="bg-white/90 dark:bg-black/90 xs:w-screen sm:w-full flex items-center justify-between shadow-[#bcc0c0] shadow-md dark:shadow-none xs:h-[8%] sm:h-[10%] z-[100] fixed top-0 ">
-        <div className="flex items-center justify-center">
+      <nav
+        className={
+          showMobileMenu
+            ? "bg-white/90 dark:bg-black/90 xs:w-screen sm:w-full flex items-center justify-between shadow-[#bcc0c0] shadow-md dark:shadow-none h-[100vh] z-[100] fixed top-0 transition-transform duration-500 switch"
+            : "bg-white/90 dark:bg-black/90 xs:w-screen sm:w-full flex items-center justify-between shadow-[#bcc0c0] shadow-md dark:shadow-none h-[10%] z-[100] fixed top-0 transition-transform duration-500 switch "
+        }
+      >
+        <div className=" flex items-center justify-center">
           <Link
             to="#home"
-            className="cursor-pointer flex xl:ml-[78px] sm:ml-[18px] xs:ml-[40px] text-[#7600bc]"
+            className="w-auto cursor-pointer flex items-center justify-center xl:ml-[78px] sm:ml-[18px] xs:ml-[20px] text-[#7600bc]"
           >
             <svg
               version="1.0"
@@ -125,7 +134,7 @@ function Header({ Link }) {
                 />
               </g>
             </svg>
-            <div className="xs:hidden sm:flex items-center justify-center font-[700] font-Raleway sm:text-[18px] lg:text-[20px] ">
+            <div className=" sm:flex items-center justify-center font-[700] font-Raleway xs:text-[12px] sm:text-[18px] lg:text-[20px] ">
               <h1>ELIJAH JOHNNY</h1>
             </div>
           </Link>
@@ -137,14 +146,14 @@ function Header({ Link }) {
               smooth
               className="flex items-center w-auto sm:mr-[8px] xl:mr-[20px] dark:hover:bg-[#7600bc]  hover:bg-[#bcc0c0] py-2 px-3 hover:rounded-[4px]"
             >
-              <div className="">
+              <div className="xs:hidden sm:flex">
                 <button className="font-Raleway scroll-smooth font-[500] xs:text-[12px] sm:text-[14px] text-[#7600bc] dark:text-[#bcc0c0] dark:font-[700] ">
                   {items.name}{" "}
                 </button>
               </div>
             </Link>
           ))}
-          <button className="bg-[#7600bc] mr-[40px] text-white font-[Raleway] py-2 px-3 rounded-[4px] text-[12px] font-[700] tracking-wide ">
+          <button className="bg-[#7600bc] xs:hidden sm:block mr-[40px] text-white font-[Raleway] py-2 px-3 rounded-[4px] text-[12px] font-[700] tracking-wide ">
             <a
               target="blank"
               href="https://drive.google.com/file/d/1wFcZhozp8jJjrAUOv2NON1I3NLkuvOTM/view?usp=sharing"
@@ -153,8 +162,32 @@ function Header({ Link }) {
             </a>
           </button>
           <button
+            onClick={() => setShowMobileMenu(false)}
+            className={showMobileMenu ? "flex" : "hidden"}
+          >
+            <FaTimes
+              className={
+                theme === "dark"
+                  ? "text-[#bcc0c0] w-[25px] h-[25px] xs:flex sm:hidden mr-[8px] "
+                  : "text-[#7600bc] w-[25px] h-[25px] xs:flex sm:hidden"
+              }
+            />
+          </button>
+          <button
+            onClick={() => setShowMobileMenu(true)}
+            className={showMobileMenu ? "hidden" : "flex"}
+          >
+            <FaBars
+              className={
+                theme === "dark"
+                  ? "text-[#bcc0c0] w-[25px] h-[25px] xs:flex sm:hidden mr-[8px]"
+                  : "text-[#7600bc] w-[25px] h-[25px] xs:flex sm:hidden"
+              }
+            />
+          </button>
+          <button
             onClick={handleThemeSwitch}
-            className="flex items-center justify-center mr-[40px] font-[Raleway] rounded-[12px] text-[12px] font-[700] tracking-wide "
+            className="flex items-center justify-center xs:mr-[20px] sm:mr-[40px] font-[Raleway] rounded-[12px] text-[12px] font-[700] tracking-wide "
           >
             <BsMoonFill
               onMouseEnter={() => setHoverOnDark(true)}
