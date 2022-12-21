@@ -10,7 +10,7 @@ const DisplaySkills = ({ mySkills }) => {
     <Container>
       <Grid container spacing={3} className="flex justify-center items-center ">
         {mySkills.map(skills => (
-          <Grid item key={skills.id} sm={12} xs={6} md={3} lg={2}>
+          <Grid item key={skills.id} xs={6} md={3} lg={2}>
             <Card
               sx={{ maxWidth: 120 }}
               className="hover:shadow-md hover:shadow-[#7600bc] shadow-2xl cursor-pointer transition-transform duration-500 relative"

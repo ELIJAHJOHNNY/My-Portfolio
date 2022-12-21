@@ -44,7 +44,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className="w-[100%] h-auto pb-[60px] dark:bg-[#7600bc] ">
-      <h2 className="text-center text-[35px] font-[700] font-Raleway pt-[60px] mb-4 flex items-center justify-center text-[#7600bc] dark:text-[#bcc0c0] ">
+      <h2 className="text-center text-[35px] font-[700] font-Raleway pt-[90px] mb-4 flex items-center justify-center text-[#7600bc] dark:text-[#bcc0c0] ">
         Send me a message!
       </h2>
       <h3 className="text-center text-[20px] font-[500] font-Raleway mb-4 flex items-center justify-center text-[#7600bc] dark:text-[#bcc0c0]">
@@ -53,7 +53,7 @@ const Contact = () => {
       <div className="w-[100%] flex justify-center items-center mt-[40px] ">
         <form className="w-[60%]" ref={form} onSubmit={sendEmail}>
           <div className="flex flex-col">
-            <div className="w-full flex justify-between mt-[20px] ">
+            <div className="w-full flex xs:flex-col sm:flex-row justify-between xs:mt-[14px] sm:mt-[20px] ">
               <div className="flex flex-col">
                 <label className=" font-Raleway font-[500] text-[14px]">
                   Name
@@ -64,7 +64,7 @@ const Contact = () => {
                   name="user_name"
                   onChange={e => setName(e.target.value)}
                   placeholder=" Enter Your Name"
-                  className="dark:bg-[#bcc0c0]  rounded-[4px] px-2 w-[300px] outline-0 border-b-[1px] border-b-black mt-[16px] py-[4px] font-Raleway text-[14px] tracking-wide "
+                  className="dark:bg-[#bcc0c0]  rounded-[4px] px-2 xs:w-[100%] sm:w-[300px] outline-0 border-b-[1px] border-b-black mt-[16px] py-[4px] font-Raleway text-[14px] tracking-wide xs:mb-[35px] sm:mb-[0px] "
                 />
               </div>
               <div className="flex flex-col ">
@@ -80,7 +80,7 @@ const Contact = () => {
                   name="user_email"
                   onChange={e => setEmail(e.target.value)}
                   placeholder=" Enter Your Email"
-                  className="w-[300px] dark:bg-[#bcc0c0]  rounded-[4px] px-2 outline-0 border-b-[1px] border-b-black mt-[16px] py-[4px] font-Raleway text-[14px] tracking-wide "
+                  className="xs:w-[100%] sm:w-[300px] dark:bg-[#bcc0c0]  rounded-[4px] px-2 outline-0 border-b-[1px] border-b-black mt-[16px] py-[4px] font-Raleway text-[14px] tracking-wide "
                 />
                 <p
                   className={

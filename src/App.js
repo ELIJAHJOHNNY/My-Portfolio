@@ -38,7 +38,7 @@ function App() {
   return (
     <BrowserRouter>
     <ThemeContext.Provider value={{theme,handleThemeSwitch}}>
-    <div>
+    <div className="w-[100%] overflow-x-hidden ">
       <Header Link={Link} />
       <Home />
       <About />

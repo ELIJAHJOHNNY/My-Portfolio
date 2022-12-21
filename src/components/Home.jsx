@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div
       id="home"
-      className=" flex flex-col justify-center items-center h-[100vh] relative dark:bg-[#7600bc]"
+      className="w-[100%] flex flex-col justify-center items-center h-[100vh] relative dark:bg-[#7600bc]"
     >
       <DateView />
       <img
@@ -28,14 +28,27 @@ const Home = () => {
         alt=""
         className="w-[100px] h-[100px] absolute right-[50px] bottom-[10px] dark:hidden"
       />
-      <h3 className="font-extrabold text-[30px] font-ms text-center dark:text-[#bcc0c0]">
+      <h3 className="font-extrabold xs:text-[18px] sm:text-[30px] font-ms text-center dark:text-[#bcc0c0]">
         Hi! I'm
       </h3>
-      <div className="dark:text-[#bcc0c0]">
+      <div className="xs:block sm:hidden dark:text-[#bcc0c0]">
         <TypeWriterEffect
           textStyle={{
             fontFamily: "Raleway",
-            fontSize: "60px",
+            fontSize: "30px",
+            fontWeight: "bold",
+          }}
+          startDelay={100}
+          cursorColor="transparent"
+          text="Kugbiyi Elijah J."
+          typeSpeed={60}
+        />
+      </div>
+      <div className="xs:hidden sm:flex dark:text-[#bcc0c0]">
+        <TypeWriterEffect
+          textStyle={{
+            fontFamily: "Raleway",
+            fontSize: "65px",
             fontWeight: "bold",
           }}
           startDelay={100}
@@ -47,12 +60,12 @@ const Home = () => {
       {/* <h1 className="font-extrabold text-[70px] font-ms text-center hover:scale-100 ">
         Johnny K. Elijah
       </h1> */}
-      <h2 className="text-center font-Raleway dark:text-[#bcc0c0] ">
+      <h2 className="text-center xs:text-[14px] sm:text-[18px] font-Raleway dark:text-[#bcc0c0] ">
         I am a creative front-end web developer <br />
         who loves to craft solid and scalable frontend products <br />
         with great user experiences.
       </h2>
-      <div className=" hover:shadow-[hsl(278,100%,37%)] duration-300 hover:shadow-md flex justify-evenly w-[30%] rounded-full py-6 bg-[#bcc0c0] items-center px-5 mt-[20px] ">
+      <div className=" hover:shadow-[hsl(278,100%,37%)] duration-300 hover:shadow-md flex justify-evenly xl:w-[30%] sm:w-[400px] xs:w-[300px] rounded-full py-6 bg-[#bcc0c0] items-center px-5 mt-[20px] ">
         {/* <div className="">
           <FaFacebookF className=" mr-[10px] duration-300 rounded-full cursor-pointer hover:text-[#7600bc] hover:scale-150 " />
         </div> */}

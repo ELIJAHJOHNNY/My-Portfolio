@@ -38,10 +38,10 @@ const Works = () => {
       link: "https://netflix-duplicate.netlify.app/",
       githubLink: "https://github.com/ELIJAHJOHNNY/GROUP-A-PROJECT.git",
       toolUsed1: "React",
-      toolUsed2: "Tailwind CSS",
-      toolUsed3: "Material UI",
+      toolUsed2: "Tailwind",
+      toolUsed3: "MUI",
       toolUsed4: "Axios",
-      toolUsed5: "The Movie Database API",
+      toolUsed5: "TMDB API",
       toolUsed6: "Redux",
     },
     {
@@ -63,11 +63,11 @@ const Works = () => {
       id="works"
       className="w-[100%] h-auto bg-[#bcc0c0] dark:bg-[#7600bc]  "
     >
-      <h1 className=" dark:text-black text-center text-[30px] font-[700] font-Raleway pt-[100px] mb-4 flex items-center justify-center text-[#7600bc] ">
+      <h1 className=" dark:text-black text-center text-[30px] font-[700] font-Raleway xs:pt-[80px] sm:pt-[100px] mb-4 flex items-center justify-center text-[#7600bc] ">
         MY WORKS
       </h1>
       <div className="w-[100%] flex justify-center items-center">
-        <div className="w-[60%]  ">
+        <div className="sm:w-[60%] xs:w-[80%] ">
           <Grid
             container
             rowSpacing={3}
@@ -79,7 +79,7 @@ const Works = () => {
                 <Card
                   onMouseEnter={() => setWorkDisplay(true)}
                   onMouseLeave={() => setWorkDisplay(false)}
-                  className="bigCard hover:shadow-md mb-[30px] hover:shadow-[#7600bc] shadow-2xl cursor-pointer transition-transform relative duration-[0.5s]"
+                  className="bigCard hover:shadow-md mb-[20px] hover:shadow-[#7600bc] shadow-2xl cursor-pointer transition-transform relative duration-[0.5s]"
                 >
                   <CardMedia
                     component="img"
@@ -105,31 +105,31 @@ const Works = () => {
                     <p
                       className={
                         workDisplay
-                          ? "white-space-normal text-[20px] px-6 font-bold flex flex-col justify-center items-center h-full text-center "
+                          ? "white-space-normal sm:text-[20px] xs:text-[12px] xs:p-2 sm:px-6 font-bold flex flex-col justify-center items-center h-full text-center xs:leading-2 sm:leading-[30px] "
                           : "hidden"
                       }
                     >
-                      <p className="font-Raleway text-[22px] mb-[20px]  ">
+                      <p className="font-Raleway xs:text-[14px] sm:text-[22px] xs:mb-[6px] sm:mb-[20px]  ">
                         {skills.name}
                       </p>
                       {skills.details}
-                      <span className="flex w-[15%] justify-between">
+                      <span className="flex xs:w-[25%] sm:w-[15%] justify-between">
                         <a
                           href={skills.githubLink}
                           target="blank"
-                          className="mt-[8px] rounded-[50%] bg-white w-[40px] h-[40px] flex items-center justify-center text-[#7600bc]"
+                          className="xs:mt-[2px] sm:mt-[8px] rounded-[50%] bg-white xs:w-[20px] sm:w-[40px] xs:h-[20px] sm:h-[40px] flex items-center justify-center text-[#7600bc]"
                         >
-                          <FaGithub className="w-[20px] h-[20px]" />
+                          <FaGithub className="xs:w-[12px] sm:w-[20px] xs:h-[12px] sm:h-[20px]" />
                         </a>
                         <a
                           href={skills.link}
                           target="blank"
-                          className="mt-[8px] rounded-[50%] bg-white w-[40px] h-[40px] flex items-center justify-center text-[#7600bc]"
+                          className="xs:mt-[2px] sm:mt-[8px] rounded-[50%] bg-white xs:w-[20px] sm:w-[40px] xs:h-[20px] sm:h-[40px] flex items-center justify-center text-[#7600bc]"
                         >
-                          <OpenInNewIcon className="w-[20px] h-[20px]" />
+                          <OpenInNewIcon className="xs:w-[6px] sm:w-[20px] xs:h-[6px] sm:h-[20px] xs:p-[5px] sm:p-0 " />
                         </a>
                       </span>
-                      <span className="mt-[16px] flex w-[80%] justify-evenly font-Raleway text-[16px]  ">
+                      <span className="xs:mt-[10px] sm:mt-[16px] flex w-[80%] justify-evenly font-Raleway xs:text-[10px] sm:text-[16px]  ">
                         <p>{skills.toolUsed1} </p>
                         <p>{skills.toolUsed2} </p>
                         <p>{skills.toolUsed3} </p>

@@ -70,7 +70,10 @@ const Skills = () => {
     },
   ];
   return (
-    <div id="skills" className="h-[100vh] w-[100%] dark:bg-[#7600bc] ">
+    <div
+      id="skills"
+      className="xs:h-auto sm:h-[100vh] xs:pb-[20px] sm:pb-[0px]  w-[100%] dark:bg-[#7600bc] "
+    >
       <h2 className="text-center text-[28px] font-[700] pt-[100px] font-Raleway mb-4 flex items-center justify-center text-[#7600bc] dark:text-black ">
         SKILLS
       </h2>

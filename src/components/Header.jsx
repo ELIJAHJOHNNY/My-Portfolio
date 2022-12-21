@@ -44,12 +44,12 @@ function Header({ Link }) {
   ];
 
   return (
-    <div>
-      <nav className="bg-white/90 dark:bg-black/90 flex items-center justify-between shadow-[#bcc0c0] shadow-md dark:shadow-none w-full h-[10%] z-[100] fixed top-0 left-0">
+    <div className="w-[100%] h-[100%]">
+      <nav className="bg-white/90 dark:bg-black/90 xs:w-screen sm:w-full flex items-center justify-between shadow-[#bcc0c0] shadow-md dark:shadow-none xs:h-[8%] sm:h-[10%] z-[100] fixed top-0 ">
         <div className="flex items-center justify-center">
           <Link
             to="#home"
-            className="cursor-pointer flex md:ml-[78px] xs:ml-[20px] text-[#7600bc]"
+            className="cursor-pointer flex xl:ml-[78px] sm:ml-[18px] xs:ml-[40px] text-[#7600bc]"
           >
             <svg
               version="1.0"
@@ -125,20 +125,20 @@ function Header({ Link }) {
                 />
               </g>
             </svg>
-            <div className="flex items-center justify-center font-[700] font-Raleway text-[20px] ">
+            <div className="xs:hidden sm:flex items-center justify-center font-[700] font-Raleway sm:text-[18px] lg:text-[20px] ">
               <h1>ELIJAH JOHNNY</h1>
             </div>
           </Link>
         </div>
-        <ul className="flex xs:hidden md:flex relative">
+        <div className="flex relative">
           {navItems.map(items => (
             <Link
               to={items.idName}
               smooth
-              className="flex items-center w-auto mr-[20px] dark:hover:bg-[#7600bc]  hover:bg-[#bcc0c0] py-2 px-3 hover:rounded-[4px]"
+              className="flex items-center w-auto sm:mr-[8px] xl:mr-[20px] dark:hover:bg-[#7600bc]  hover:bg-[#bcc0c0] py-2 px-3 hover:rounded-[4px]"
             >
               <div className="">
-                <button className="font-Raleway scroll-smooth font-[500] text-[12px] text-[#7600bc] dark:text-[#bcc0c0] dark:font-[700] ">
+                <button className="font-Raleway scroll-smooth font-[500] xs:text-[12px] sm:text-[14px] text-[#7600bc] dark:text-[#bcc0c0] dark:font-[700] ">
                   {items.name}{" "}
                 </button>
               </div>
@@ -154,7 +154,7 @@ function Header({ Link }) {
           </button>
           <button
             onClick={handleThemeSwitch}
-            className="flex items-center justify-center mr-[40px] text-white font-[Raleway] rounded-[12px] text-[12px] font-[700] tracking-wide "
+            className="flex items-center justify-center mr-[40px] font-[Raleway] rounded-[12px] text-[12px] font-[700] tracking-wide "
           >
             <BsMoonFill
               onMouseEnter={() => setHoverOnDark(true)}
@@ -189,7 +189,7 @@ function Header({ Link }) {
           >
             Turn on dark mode
           </p>
-        </ul>
+        </div>
       </nav>
     </div>
   );
