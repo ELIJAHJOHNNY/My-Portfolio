@@ -5,11 +5,11 @@ const About = () => {
   return (
     <section
       id="about"
-      className="dark:bg-[#7600bc] dark:border-none flex items-center justify-center border-solid border-2 bg-[#bcc0c0] h-[100vh] w-[100%] "
+      className="dark:bg-[#7600bc] dark:border-none flex items-center justify-center border-solid border-2 bg-[#bcc0c0] xs:py-[40px] md:py-0 h-[100vh] w-[100%] "
     >
       <div className="w-[80%]">
         <div className="w-full flex xs:flex-col sm:flex-row items-center justify-between ">
-          <div className="rounded-full hover:scale-110 transition-transform duration-700 shadow-md hover:shadow-2xl xs:w-[100%] sm:w-[35%] xs:mb-[20px] sm:mb-[0px] ">
+          <div className="rounded-full hover:scale-110 transition-transform duration-700 shadow-md hover:shadow-2xl xs:w-[100%] sm:w-[35%] xs:mb-[25px] sm:mb-[0px] ">
             <img
               alt="My Portrait"
               src={img}
