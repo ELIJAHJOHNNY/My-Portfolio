@@ -31,7 +31,7 @@ function DateView() {
   };
   setInterval(updateTime, 1000);
   return (
-    <div className=" absolute xs:right-[20px] xs:top-[90px] sm:right-[40px] sm:top-[100px] flex items-center justify-center flex-col ">
+    <div className=" absolute xs:right-[20px] xs:top-[90px] sm:right-[40px] sm:top-[100px] md:top-[120px] lg:top-[100px] flex items-center justify-center flex-col ">
       <h1 className="text-[#7600bc] dark:text-[#bcc0c0] font-Raleway xs:text-[18px] sm:text-[25px] font-[700] ">
         {time}
       </h1>

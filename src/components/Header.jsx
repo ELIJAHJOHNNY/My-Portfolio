@@ -52,7 +52,7 @@ function Header({ Link }) {
         // className="bg-white/90 dark:bg-black/90 xs:w-screen sm:w-full flex items-center justify-between shadow-[#bcc0c0] shadow-md dark:shadow-none h-[10%] z-[100] fixed top-0"
         className={
           showMobileMenu
-            ? "bg-white dark:bg-black xs:w-screen sm:w-full flex flex-col items-center justify-center shadow-[#bcc0c0] shadow-md dark:shadow-none h-[100vh] z-[100] fixed top-0 transition-transform duration-500 switch"
+            ? "bg-white dark:bg-black xs:w-screen  sm:w-full flex flex-col items-center justify-center shadow-[#bcc0c0] shadow-md dark:shadow-none h-[100vh] z-[100] fixed top-0 transition-transform duration-500 switch"
             : "bg-white/90 dark:bg-black/90 xs:w-screen sm:w-full flex items-center justify-between shadow-[#bcc0c0] shadow-md dark:shadow-none h-[10%] z-[100] fixed top-0 transition-transform duration-500 switch "
         }
       >
@@ -224,6 +224,32 @@ function Header({ Link }) {
               Turn on dark mode
             </p>
           </div>
+          {/* <div
+            className={
+              !showMobileMenu
+                ? "xs:block md:hidden absolute top-0 right-0 w-[200%] "
+                : "hidden"
+            }
+          >
+            <p
+              className={
+                hoverOnLight
+                  ? "absolute top-[55px] right-0 px-1 bg-[#bcc0c0] text-[#7600bc] rounded-[8px] text-[12px] font-Raleway"
+                  : "hidden"
+              }
+            >
+              Turned on light mode
+            </p>
+            <p
+              className={
+                hoverOnDark
+                  ? "absolute top-[55px] right-0 px-1 bg-black text-[#bcc0c0] rounded-[8px] text-[12px] font-Raleway"
+                  : "hidden"
+              }
+            >
+              Turned on dark mode
+            </p>
+          </div> */}
         </div>
 
         {/* Displaying Menu list on a mobile screen */}
@@ -231,6 +257,7 @@ function Header({ Link }) {
           <div className="flex justify-between items-center w-[100vw] mb-[30px] relative">
             <Link
               to="#home"
+              onClick={() => setShowMobileMenu(false)}
               className="w-auto cursor-pointer flex items-center justify-center xl:ml-[78px] sm:ml-[18px] xs:ml-[20px] text-[#7600bc]"
             >
               <svg
@@ -355,7 +382,7 @@ function Header({ Link }) {
                       : "hidden"
                   }
                 >
-                  Turn on light mode
+                  Turned on light mode
                 </p>
                 <p
                   className={
@@ -364,34 +391,46 @@ function Header({ Link }) {
                       : "hidden"
                   }
                 >
-                  Turn on dark mode
+                  Turned on dark mode
                 </p>
               </div>
             </div>
           </div>
-          <div
-            className={
-              showMobileMenu
-                ? "flex flex-col items-center justify-center"
-                : "hidden"
-            }
-          >
-            {navItems.map(items => (
-              <Link
-                to={items.idName}
-                smooth
-                className="flex items-center  dark:hover:bg-[#7600bc]  hover:bg-[#bcc0c0] py-2 px-3 hover:rounded-[4px]"
-              >
-                <div className="">
-                  <button
-                    onClick={() => setShowMobileMenu(false)}
-                    className=" font-Raleway font-[500] xs:text-[20px] text-[#7600bc] dark:text-[#bcc0c0] dark:font-[700] "
-                  >
-                    {items.name}{" "}
-                  </button>
-                </div>
-              </Link>
-            ))}
+          <div>
+            <div
+              className={
+                showMobileMenu
+                  ? "flex flex-col items-center justify-center"
+                  : "hidden"
+              }
+            >
+              {navItems.map(items => (
+                <Link
+                  to={items.idName}
+                  smooth
+                  className="flex items-center  dark:hover:bg-[#7600bc]  hover:bg-[#bcc0c0] py-2 px-3 hover:rounded-[4px]"
+                >
+                  <div className="">
+                    <button
+                      onClick={() => setShowMobileMenu(false)}
+                      className=" font-Raleway font-[500] xs:text-[20px] text-[#7600bc] dark:text-[#bcc0c0] dark:font-[700] "
+                    >
+                      {items.name}{" "}
+                    </button>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <div className="flex items-center justify-center w-screen py-2">
+              <button className="bg-[#7600bc] text-white font-[Raleway] py-2 px-3 rounded-[4px] text-[20px] font-[700] tracking-wide ">
+                <a
+                  target="blank"
+                  href="https://drive.google.com/file/d/1wFcZhozp8jJjrAUOv2NON1I3NLkuvOTM/view?usp=sharing"
+                >
+                  RESUME
+                </a>
+              </button>
+            </div>
           </div>
         </div>
       </nav>

@@ -5,27 +5,27 @@ const About = () => {
   return (
     <section
       id="about"
-      className="dark:bg-[#7600bc] dark:border-none flex items-center justify-center border-solid border-2 bg-[#bcc0c0] xs:py-[40px] md:py-0 h-[100vh] w-[100%] "
+      className="dark:bg-[#7600bc] dark:border-none flex items-center justify-center border-solid border-2 bg-[#bcc0c0] xs:py-[40px] md:py-0 xs:h-auto md:h-[100vh] w-[100%] "
     >
       <div className="w-[80%]">
         <div className="w-full flex xs:flex-col sm:flex-row items-center justify-between ">
-          <div className="rounded-full hover:scale-110 transition-transform duration-700 shadow-md hover:shadow-2xl xs:w-[100%] sm:w-[35%] xs:mb-[25px] sm:mb-[0px] ">
+          <div className="rounded-full md:hover:scale-110 transition-transform duration-700 shadow-md hover:shadow-2xl xs:w-[100%] sm:w-[35%] xs:my-[30px] sm:mb-[0px] ">
             <img
               alt="My Portrait"
               src={img}
               className=" rounded-[24px] cursor-pointer"
             />
           </div>
-          <div className="text-center bg-white dark:bg-black rounded-3xl shadow-xl hover:shadow-2xl cursor-pointer xs:p-2 smp-6 xs:leading-[18px] sm:leading-[30px] sm:w-[55%] xs:w-[100%] ">
+          <div className="xs:mb-[30px] md:mb-0 text-center bg-white dark:bg-black rounded-3xl shadow-xl hover:shadow-2xl cursor-pointer xs:p-2 sm:p-6 xs:leading-[18px] sm:leading-[30px] sm:w-[55%] xs:w-[100%] ">
             <h1 className="text-center xs:text-[20px] sm:text-[28px] font-[700] font-Raleway xs:mb-2 sm:mb-4 text-[#7600bc] ">
               ABOUT ME
             </h1>
             <h3 className="font-semibold font-Raleway dark:text-[#bcc0c0] xs:text-[12px] sm:text-[14px] ">
-              Hello! My name is Elijah, a confident, naturally curious
-              individual, perpetually working on improving my chops one design
-              problem at a time, a judicious user of the AGILE manifesto, a
-              lover of art and music and I always look to meet new and exciting
-              people to work with or for.
+              Hi! My name is Elijah, a confident, naturally curious individual,
+              perpetually working on improving my chops one design problem at a
+              time, a judicious user of the AGILE manifesto, a lover of art and
+              music and I always look to meet new and exciting people to work
+              with or for.
               <br />
               My journey as a software engineer started in 2016, self-learning
               Python programming. Though, I couldn’t do much being an
@@ -40,7 +40,9 @@ const About = () => {
               </a>
               Bootcamp to acquire training in Front-end Web Development. I was
               appointed front-end Engineers group lead for the two main projects
-              built during the training process.
+              built during the training process. I was also opportuned to
+              participate in 2022 Hacktoberfest, contributing to open source and
+              earning a badge from Digital Ocean.
             </h3>
           </div>
         </div>
