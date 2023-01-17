@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Works.css";
 import { FaGithub } from "react-icons/fa";
 import netfli2 from "../assets/netfli2.jpg";
@@ -11,6 +12,7 @@ import CardMedia from "@mui/material/CardMedia";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 const Works = () => {
+  const navigate = useNavigate();
   const [workDisplay, setWorkDisplay] = useState(false);
   const myWorks = [
     {
@@ -27,6 +29,7 @@ const Works = () => {
       toolUsed3: "Material UI",
       toolUsed4: "Axios",
       toolUsed5: "Figma",
+      moreDetails: "/handout-details",
     },
     {
       id: 2,
@@ -74,8 +77,8 @@ const Works = () => {
             columnSpacing={6}
             className="flex justify-center items-center w-full mb-[60px]"
           >
-            {myWorks.map(skills => (
-              <Grid item key={skills.id} rowSpacing={6} xs={12}>
+            {myWorks.map(works => (
+              <Grid item key={works.id} rowSpacing={6} xs={12}>
                 <Card
                   onMouseEnter={() => setWorkDisplay(true)}
                   onMouseLeave={() => setWorkDisplay(false)}
@@ -83,8 +86,8 @@ const Works = () => {
                 >
                   <CardMedia
                     component="img"
-                    image={skills.img}
-                    alt={skills.name}
+                    image={works.img}
+                    alt={works.name}
                   />
                   {/* <Typography
                     gutterBottom
@@ -110,19 +113,19 @@ const Works = () => {
                       }
                     >
                       <p className="font-Raleway xs:text-[14px] sm:text-[22px] xs:mb-[6px] sm:mb-[20px]  ">
-                        {skills.name}
+                        {works.name}
                       </p>
-                      {skills.details}
+                      {works.details}
                       <span className="flex xs:w-[25%] sm:w-[15%] justify-between">
                         <a
-                          href={skills.githubLink}
+                          href={works.githubLink}
                           target="blank"
                           className="xs:mt-[2px] sm:mt-[8px] rounded-[50%] bg-white xs:w-[20px] sm:w-[40px] xs:h-[20px] sm:h-[40px] flex items-center justify-center text-[#7600bc]"
                         >
                           <FaGithub className="xs:w-[12px] sm:w-[20px] xs:h-[12px] sm:h-[20px]" />
                         </a>
                         <a
-                          href={skills.link}
+                          href={works.link}
                           target="blank"
                           className="xs:mt-[2px] sm:mt-[8px] rounded-[50%] bg-white xs:w-[20px] sm:w-[40px] xs:h-[20px] sm:h-[40px] flex items-center justify-center text-[#7600bc]"
                         >
@@ -130,18 +133,22 @@ const Works = () => {
                         </a>
                       </span>
                       <span className="xs:mt-[10px] sm:mt-[16px] flex w-[80%] justify-evenly font-Raleway xs:text-[10px] sm:text-[16px]  ">
-                        <p>{skills.toolUsed1} </p>
-                        <p>{skills.toolUsed2} </p>
-                        <p>{skills.toolUsed3} </p>
-                        <p>{skills.toolUsed4} </p>
-                        <p>{skills.toolUsed5} </p>
-                        <p>{skills.toolUsed6} </p>
+                        <p>{works.toolUsed1} </p>
+                        <p>{works.toolUsed2} </p>
+                        <p>{works.toolUsed3} </p>
+                        <p>{works.toolUsed4} </p>
+                        <p>{works.toolUsed5} </p>
+                        <p>{works.toolUsed6} </p>
                       </span>
                     </p>
                   </div>
                 </Card>
                 <div className="flex items-center justify-center">
-                  <button className="dark:bg-[#bcc0c0] bg-[#7600bc] mb-[20px] dark:text-[#7600bc] text-[#bcc0c0] font-[Raleway] py-2 px-3 rounded-[4px] text-[12px] font-[700] tracking-wide ">
+                  <button
+                    className="dark:bg-[#bcc0c0] bg-[#7600bc] mb-[20px] dark:text-[#7600bc] text-[#bcc0c0] font-[Raleway] py-2 px-3 rounded-[4px] text-[12px] font-[700] tracking-wide "
+                    type="button"
+                    onClick={() => navigate(works.moreDetails)}
+                  >
                     View more details
                   </button>
                 </div>
