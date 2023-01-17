@@ -29,7 +29,7 @@ const Works = () => {
       toolUsed3: "Material UI",
       toolUsed4: "Axios",
       toolUsed5: "Figma",
-      moreDetails: "/handout-details",
+      moreDetails: "/handout-detail",
     },
     {
       id: 2,

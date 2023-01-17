@@ -3,6 +3,7 @@ import editor from "../assets/editorcon.png";
 import { useNavigate } from "react-router-dom";
 import handout from "../assets/handout.png";
 import loginShow from "../assets/login-show.png";
+import loginButton from "../assets/login-button.png";
 import loginHide from "../assets/login-hide.png";
 import loginmobile from "../assets/login-mobile.png";
 
@@ -204,14 +205,21 @@ const HandoutDetails = () => {
               <div>
                 <img
                   src={loginShow}
-                  className="w-[95%] "
+                  className="w-[95%] border-[#bcc0c0] border-2 rounded-[4px] "
                   alt="Login Page showing password"
                 />
               </div>
-              <div>
+              <div className="pt-4">
                 <img
                   src={loginHide}
-                  className="w-[95%] "
+                  className="w-[95%] border-[#bcc0c0] border-2 rounded-[4px] "
+                  alt="Login Page hiding password"
+                />
+              </div>
+              <div className="pt-4">
+                <img
+                  src={loginButton}
+                  className="w-[95%] border-[#bcc0c0] border-2 rounded-[4px] "
                   alt="Login Page hiding password"
                 />
               </div>
@@ -226,25 +234,31 @@ const HandoutDetails = () => {
             <div className="w-[50%] border-l-4 border-l-[#bcc0c0] flex ">
               <div className="pl-2 font-Raleway text-[16px]">
                 <p>
-                  The login page was designed having the show/hide password feature triggered on toggling the eye icon. A mobile screen was also designed to ensure the page is responsive. Several t
+                  The login page was designed to have the show/hide password
+                  feature triggered on toggling the eye icon in the password
+                  input. The login (Continue) button was also designed to be
+                  disabled if the email and password inputs are empty, to avoid
+                  sending unnecessary data to the backend. A mobile screen was
+                  also designed to ensure the page is responsive. Tools used to
+                  implement the login page design includes
                 </p>
                 <ul className="py-2">
-                  <li>🔧 An IDE (I used VSCode).</li>
-                  <li>
-                    🔧 An extension called {""}
-                    <a
-                      href="https://editorconfig.org/"
-                      target="blank"
-                      className="text-[#7600bc] font-[700] "
-                    >
-                      EditorConfig.
-                    </a>
-                  </li>
+                  <li>🔧 React JS.</li>
+                  <li>🔧 Figma</li>
+                  <li>🔧 Tailwind CSS</li>
+                  <li>🔧 Material UI</li>
                 </ul>
                 <p>
-                  At the end of this task, I Learnt how to make use of
-                  EditorConfig to make prefferred configurations to how one
-                  wants his/her codes written.
+                  At the end of this task, I Learnt how to convert Figma designs
+                  to code to implement a design. Click{" "}
+                  <a
+                    href=" https://github.com/StuternHousemanship/HANDOUT-Frontend-Project-Team1.1/tree/HDT-2_Dashboard_Features/src/pages/onboarding/login"
+                    target="blank"
+                    className="text-[#7600bc] font-[700] "
+                  >
+                    here{" "}
+                  </a>
+                  to go to the code on GitHub.
                 </p>
               </div>
             </div>
