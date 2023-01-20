@@ -25,12 +25,12 @@ const Works = () => {
       githubLink:
         "https://github.com/StuternHousemanship/HANDOUT-Frontend-Project-Team1.1.git",
       toolUsed1: "React",
-      toolUsed2: "Tailwind CSS",
-      toolUsed3: "Material UI",
+      toolUsed2: "Tailwind",
+      toolUsed3: "MUI",
       toolUsed4: "Axios",
       toolUsed5: "Figma",
-      toolUsed6: "Ant Design",
-      toolUsed7: "Firebase",
+      toolUsed6: "Ant D",
+      // toolUsed7: "Firebase",
       moreDetails: "/handout-details",
     },
     {
