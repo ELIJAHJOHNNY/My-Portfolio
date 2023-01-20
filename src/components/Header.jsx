@@ -53,7 +53,7 @@ function Header({ Link }) {
         className={
           showMobileMenu
             ? "bg-white dark:bg-black xs:w-screen  sm:w-full flex flex-col items-center justify-center shadow-[#bcc0c0] shadow-md dark:shadow-none h-[100vh] z-[100] fixed top-0 transition-transform duration-500 switch"
-            : "bg-white/90 dark:bg-black/90 xs:w-screen sm:w-full flex items-center justify-between shadow-[#bcc0c0] shadow-md dark:shadow-none h-[10%] z-[100] fixed top-0 transition-transform duration-500 switch "
+            : "bg-white/90 dark:bg-[#000000]/80 xs:w-screen sm:w-full flex items-center justify-between shadow-[#bcc0c0] shadow-md dark:shadow-none h-[10%] z-[100] fixed top-0 transition-transform duration-500 switch "
         }
       >
         <div

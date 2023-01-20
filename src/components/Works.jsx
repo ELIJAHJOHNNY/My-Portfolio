@@ -29,7 +29,9 @@ const Works = () => {
       toolUsed3: "Material UI",
       toolUsed4: "Axios",
       toolUsed5: "Figma",
-      moreDetails: "/handout-detail",
+      toolUsed6: "Ant Design",
+      toolUsed7: "Firebase",
+      moreDetails: "/handout-details",
     },
     {
       id: 2,
@@ -46,27 +48,26 @@ const Works = () => {
       toolUsed4: "Axios",
       toolUsed5: "TMDB API",
       toolUsed6: "Redux",
+      moreDetails: "/project-details",
     },
     {
       id: 3,
       name: "SHOP-IT",
       img: commerce,
       details: "A mini E-commerce app created with Commerce.js API",
-      link: "https://github.com/ELIJAHJOHNNY/E-commerce.git",
+      link: "https://shop-it-commerce.netlify.app",
       githubLink: "https://github.com/ELIJAHJOHNNY/E-commerce.git",
       toolUsed1: "React",
       toolUsed3: "Material UI",
       toolUsed4: "Axios",
       toolUsed5: "Commerce.JS API",
+      moreDetails: "/project-details",
     },
   ];
 
   return (
-    <div
-      id="works"
-      className="w-[100%] h-auto bg-[#bcc0c0] dark:bg-[#7600bc]  "
-    >
-      <h1 className=" dark:text-black text-center text-[30px] font-[700] font-Raleway xs:pt-[80px] sm:pt-[100px] mb-4 flex items-center justify-center text-[#7600bc] ">
+    <div id="works" className="w-[100%] h-auto bg-[#bcc0c0] dark:bg-black  ">
+      <h1 className=" dark:text-[#7600bc] text-center text-[30px] font-[700] font-Raleway xs:pt-[80px] sm:pt-[100px] mb-4 flex items-center justify-center text-[#7600bc] ">
         MY WORKS
       </h1>
       <div className="w-[100%] flex justify-center items-center">
@@ -139,6 +140,7 @@ const Works = () => {
                         <p>{works.toolUsed4} </p>
                         <p>{works.toolUsed5} </p>
                         <p>{works.toolUsed6} </p>
+                        <p>{works.toolUsed7} </p>
                       </span>
                     </p>
                   </div>

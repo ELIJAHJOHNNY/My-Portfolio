@@ -32,7 +32,7 @@ function DateView() {
   setInterval(updateTime, 1000);
   return (
     <div className=" absolute xs:right-[20px] xs:top-[90px] sm:right-[40px] sm:top-[100px] md:top-[120px] lg:top-[100px] flex items-center justify-center flex-col ">
-      <h1 className="text-[#7600bc] dark:text-[#bcc0c0] font-Raleway xs:text-[18px] sm:text-[25px] font-[700] ">
+      <h1 className="text-[#7600bc] dark:text-[#bcc0c0] font-Raleway xs:text-[16px] sm:text-[25px] font-[700] ">
         {time}
       </h1>
       <h1 className="text-[#7600bc] font-Raleway xs:text-[14px] sm:text-[18px] font-[700] bg-[#bcc0c0] rounded-[4px] xs:p-[2px] sm:p-2 ">

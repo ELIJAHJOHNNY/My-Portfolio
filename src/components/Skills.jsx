@@ -51,7 +51,7 @@ const Skills = () => {
     {
       id: 8,
       name: "Tailwind",
-      img: "https://tailwindcss.com/_next/static/media/social-square.eab77323.jpg",
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png",
     },
     {
       id: 9,
@@ -72,9 +72,9 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="xs:h-auto sm:h-[100vh] xs:pb-[20px] sm:pb-[0px]  w-[100%] dark:bg-[#7600bc] "
+      className="xs:h-auto sm:h-[100vh] xs:pb-[20px] sm:pb-[0px]  w-[100%] dark:bg-black "
     >
-      <h2 className="text-center text-[28px] font-[700] pt-[100px] font-Raleway mb-4 flex items-center justify-center text-[#7600bc] dark:text-black ">
+      <h2 className="text-center text-[28px] font-[700] pt-[100px] font-Raleway mb-4 flex items-center justify-center text-[#7600bc] dark:text-[#7600bc] ">
         SKILLS
       </h2>
       <div className="flex justify-evenly mb-6">
@@ -82,7 +82,7 @@ const Skills = () => {
           onClick={() => toggleTab(1)}
           className={
             tab === 1
-              ? "p-1 text-[16px] font-[700] font-Raleway mb-4 active "
+              ? "p-1 text-[16px] font-[700] font-Raleway mb-4 active text-[#7600bc] "
               : "p-1 text-[16px] font-[700] font-Raleway mb-4 text-[#808383]"
           }
         >
@@ -92,7 +92,7 @@ const Skills = () => {
           onClick={() => toggleTab(2)}
           className={
             tab === 2
-              ? "p-1 text-[16px] font-[700] font-Raleway mb-4 active "
+              ? "p-1 text-[16px] font-[700] font-Raleway mb-4 active text-[#7600bc] "
               : "p-1 text-[16px] font-[700] font-Raleway mb-4 text-[#808383]  "
           }
         >

@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="dark:bg-[#7600bc] dark:border-none flex items-center justify-center border-solid border-2 bg-[#bcc0c0] xs:py-[40px] md:py-0 xs:h-auto md:h-[100vh] w-[100%] "
+      className="dark:bg-black dark:border-none flex items-center justify-center border-solid border-2 bg-[#bcc0c0] xs:py-[40px] md:py-0 xs:h-auto md:h-[100vh] w-[100%] "
     >
       <div className="w-[80%]">
         <div className="w-full flex xs:flex-col sm:flex-row items-center justify-between ">
@@ -16,11 +16,11 @@ const About = () => {
               className=" rounded-[24px] cursor-pointer"
             />
           </div>
-          <div className="xs:mb-[30px] md:mb-0 text-center bg-white dark:bg-black rounded-3xl shadow-xl hover:shadow-2xl cursor-pointer xs:p-2 sm:p-6 xs:leading-[18px] sm:leading-[30px] sm:w-[55%] xs:w-[100%] ">
+          <div className="xs:mb-[30px] md:mb-0 text-center bg-white dark:bg-[#bcc0c0] dark:text-black rounded-3xl shadow-xl hover:shadow-2xl cursor-pointer xs:p-2 sm:p-6 xs:leading-[18px] sm:leading-[30px] sm:w-[55%] xs:w-[100%] ">
             <h1 className="text-center xs:text-[20px] sm:text-[28px] font-[700] font-Raleway xs:mb-2 sm:mb-4 text-[#7600bc] ">
               ABOUT ME
             </h1>
-            <h3 className="font-semibold font-Raleway dark:text-[#bcc0c0] xs:text-[12px] sm:text-[14px] ">
+            <h3 className="font-semibold font-Raleway dark:text-black xs:text-[12px] sm:text-[14px] ">
               Hi! My name is Elijah, a confident, naturally curious individual,
               perpetually working on improving my chops one design problem at a
               time, a judicious user of the AGILE manifesto, a lover of art and

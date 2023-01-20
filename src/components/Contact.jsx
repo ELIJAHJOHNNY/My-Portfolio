@@ -1,6 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import { FaPaperPlane } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaTwitter,
+  FaPaperPlane,
+} from "react-icons/fa";
+import { HiMail } from "react-icons/hi";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -46,7 +52,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="w-[100%] h-auto pb-[60px] dark:bg-[#7600bc] ">
+    <div id="contact" className="w-[100%] h-auto pb-[60px] dark:bg-black ">
       <h2 className="text-center text-[35px] font-[700] font-Raleway pt-[90px] mb-4 flex items-center justify-center text-[#7600bc] dark:text-[#bcc0c0] ">
         Send me a message!
       </h2>
@@ -58,7 +64,7 @@ const Contact = () => {
           <div className="flex flex-col">
             <div className="w-full flex xs:flex-col sm:flex-row justify-between xs:mt-[14px] sm:mt-[20px] ">
               <div className="flex flex-col">
-                <label className=" font-Raleway font-[500] text-[14px]">
+                <label className=" font-Raleway font-[500] text-[14px] dark:text-[#7600bc]">
                   Name
                 </label>
                 <input
@@ -71,7 +77,7 @@ const Contact = () => {
                 />
               </div>
               <div className="flex flex-col ">
-                <label className=" font-Raleway font-[500] text-[14px]">
+                <label className=" font-Raleway font-[500] text-[14px] dark:text-[#7600bc]">
                   Email Address
                 </label>
                 <input
@@ -98,7 +104,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex flex-col mt-[35px] ">
-              <label className=" font-Raleway font-[500] text-[14px]">
+              <label className=" font-Raleway font-[500] text-[14px] dark:text-[#7600bc]">
                 Message
               </label>
               <textarea
@@ -135,12 +141,34 @@ const Contact = () => {
         </form>
       </div>
       <div className="w-[100%] flex-col h-auto py-[40px] flex items-center justify-center  ">
-        <div className="w-[80%] border-[1px] border-[#7600bc] dark:border-[#bcc0c0] "></div>
-        <div>
-          <p className="font-Raleway text-[16px] text-[#7600bc] dark:text-[#bcc0c0] pt-4 font-[700] ">
+        <div className="w-[80%] border-[1px] border-[#7600bc] dark:border-[#bcc0c0] flex items-center justify-center"></div>
+        <div className="flex-col w-[80%] flex items-center justify-center">
+          <p className="font-Raleway text-center xs:text-[14px] md:text-[16px] text-[#7600bc] dark:text-[#bcc0c0] pt-4 font-[700] ">
             {" "}
             Made with 💖 by Kugbiyi Elijah Johnny ©2022
           </p>
+          <div className="py-[40px] xs:w-[80%] md:w-[40%] flex justify-evenly items-center">
+            <div className="rounded-full xs:p-2 md:p-4 bg-[#bcc0c0] flex items-center justify-center">
+              <a href="https://github.com/ELIJAHJOHNNY" target="blank">
+                <FaGithub className=" duration-300 text-black  rounded-lg cursor-pointer hover:text-[#7600bc] hover:scale-150" />
+              </a>
+            </div>
+            <div className="rounded-full xs:p-2 md:p-4 bg-[#bcc0c0] flex items-center justify-center">
+              <a href="https://linkedin.com/in/elijahkugbiyi" target="blank">
+                <FaLinkedinIn className="text-black duration-300 rounded-lg cursor-pointer hover:text-[#7600bc] hover:scale-150" />
+              </a>
+            </div>
+            <div className="rounded-full xs:p-2 md:p-4 bg-[#bcc0c0] flex items-center justify-center">
+              <a href="https://twitter.com/TzElijay" target="blank">
+                <FaTwitter className="text-black duration-300 rounded-lg cursor-pointer hover:text-[#7600bc] hover:scale-150" />
+              </a>
+            </div>
+            <div className="rounded-full xs:p-2 md:p-4 bg-[#bcc0c0] flex items-center justify-center">
+              <a href="mailto:kugbiyielijah@gmail.com" target="blank">
+                <HiMail className="text-black duration-300 rounded-lg cursor-pointer hover:text-[#7600bc] hover:scale-150" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

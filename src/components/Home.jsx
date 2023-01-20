@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="w-[100%] flex flex-col justify-center items-center h-[100vh] relative dark:bg-[#7600bc]"
+      className="w-[100%] flex flex-col justify-center items-center h-[100vh] relative dark:bg-black"
     >
       <DateView />
       <img
