@@ -24,7 +24,7 @@ const GoToTopButton = () => {
         <button
           type="button"
           onClick={goUp}
-          className="rounded-full xs:p-[2px] md:p-4 dark:text-[#7600bc] dark:bg-[#bcc0c0] text-[#bcc0c0] bg-[#7600bc] fixed xs:bottom-[30px] md:bottom-[50px] xs:right-[4px] md:right-[50px] "
+          className="rounded-full xs:p-[4px] md:p-4 dark:text-[#7600bc] dark:bg-[#bcc0c0] text-[#bcc0c0] bg-[#7600bc] fixed xs:bottom-[30px] md:bottom-[50px] xs:right-[4px] md:right-[50px] "
         >
           <FaArrowUp />
         </button>
