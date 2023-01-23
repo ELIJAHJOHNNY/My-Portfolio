@@ -142,33 +142,33 @@ const Contact = () => {
       </div>
       <div className="w-[100%] flex-col h-auto py-[40px] flex items-center justify-center  ">
         <div className="w-[80%] border-[1px] border-[#7600bc] dark:border-[#bcc0c0] flex items-center justify-center"></div>
+        <div className="py-[40px] xs:w-[80%] md:w-[40%] flex justify-evenly items-center">
+          <div className="rounded-full xs:p-2 md:p-4 bg-[#bcc0c0] flex items-center justify-center">
+            <a href="https://github.com/ELIJAHJOHNNY" target="blank">
+              <FaGithub className=" duration-300 text-black  rounded-lg cursor-pointer hover:text-[#7600bc] hover:scale-150" />
+            </a>
+          </div>
+          <div className="rounded-full xs:p-2 md:p-4 bg-[#bcc0c0] flex items-center justify-center">
+            <a href="https://linkedin.com/in/elijahkugbiyi" target="blank">
+              <FaLinkedinIn className="text-black duration-300 rounded-lg cursor-pointer hover:text-[#7600bc] hover:scale-150" />
+            </a>
+          </div>
+          <div className="rounded-full xs:p-2 md:p-4 bg-[#bcc0c0] flex items-center justify-center">
+            <a href="https://twitter.com/TzElijay" target="blank">
+              <FaTwitter className="text-black duration-300 rounded-lg cursor-pointer hover:text-[#7600bc] hover:scale-150" />
+            </a>
+          </div>
+          <div className="rounded-full xs:p-2 md:p-4 bg-[#bcc0c0] flex items-center justify-center">
+            <a href="mailto:kugbiyielijah@gmail.com" target="blank">
+              <HiMail className="text-black duration-300 rounded-lg cursor-pointer hover:text-[#7600bc] hover:scale-150" />
+            </a>
+          </div>
+        </div>
         <div className="flex-col w-[80%] flex items-center justify-center">
           <p className="font-Raleway text-center xs:text-[14px] md:text-[16px] text-[#7600bc] dark:text-[#bcc0c0] pt-4 font-[700] ">
             {" "}
             Made with 💖 by Kugbiyi Elijah Johnny ©2022
           </p>
-          <div className="py-[40px] xs:w-[80%] md:w-[40%] flex justify-evenly items-center">
-            <div className="rounded-full xs:p-2 md:p-4 bg-[#bcc0c0] flex items-center justify-center">
-              <a href="https://github.com/ELIJAHJOHNNY" target="blank">
-                <FaGithub className=" duration-300 text-black  rounded-lg cursor-pointer hover:text-[#7600bc] hover:scale-150" />
-              </a>
-            </div>
-            <div className="rounded-full xs:p-2 md:p-4 bg-[#bcc0c0] flex items-center justify-center">
-              <a href="https://linkedin.com/in/elijahkugbiyi" target="blank">
-                <FaLinkedinIn className="text-black duration-300 rounded-lg cursor-pointer hover:text-[#7600bc] hover:scale-150" />
-              </a>
-            </div>
-            <div className="rounded-full xs:p-2 md:p-4 bg-[#bcc0c0] flex items-center justify-center">
-              <a href="https://twitter.com/TzElijay" target="blank">
-                <FaTwitter className="text-black duration-300 rounded-lg cursor-pointer hover:text-[#7600bc] hover:scale-150" />
-              </a>
-            </div>
-            <div className="rounded-full xs:p-2 md:p-4 bg-[#bcc0c0] flex items-center justify-center">
-              <a href="mailto:kugbiyielijah@gmail.com" target="blank">
-                <HiMail className="text-black duration-300 rounded-lg cursor-pointer hover:text-[#7600bc] hover:scale-150" />
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </div>

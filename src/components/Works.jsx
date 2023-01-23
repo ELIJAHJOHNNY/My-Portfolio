@@ -68,7 +68,7 @@ const Works = () => {
   return (
     <div id="works" className="w-[100%] h-auto bg-[#bcc0c0] dark:bg-black  ">
       <h1 className=" dark:text-[#7600bc] text-center text-[30px] font-[700] font-Raleway xs:pt-[80px] sm:pt-[100px] mb-4 flex items-center justify-center text-[#7600bc] ">
-        MY WORKS
+        PROJECTS
       </h1>
       <div className="w-[100%] flex justify-center items-center">
         <div className="sm:w-[60%] xs:w-[80%] ">

@@ -16,7 +16,7 @@ const About = () => {
               className=" rounded-[24px] cursor-pointer"
             />
           </div>
-          <div className="xs:mb-[30px] md:mb-0 text-center bg-white dark:bg-[#bcc0c0] dark:text-black rounded-3xl shadow-xl hover:shadow-2xl cursor-pointer xs:p-2 sm:p-6 xs:leading-[18px] sm:leading-[30px] sm:w-[55%] xs:w-[100%] ">
+          <div className="xs:mb-[30px] md:mb-0 flex flex-col items-center justify-center w-full text-center bg-white dark:bg-[#bcc0c0] dark:text-black rounded-3xl shadow-xl hover:shadow-2xl cursor-pointer xs:p-2 sm:p-6 xs:leading-[18px] sm:leading-[30px] sm:w-[55%] xs:w-[100%] ">
             <h1 className="text-center xs:text-[20px] sm:text-[28px] font-[700] font-Raleway xs:mb-2 sm:mb-4 text-[#7600bc] ">
               ABOUT ME
             </h1>
@@ -27,7 +27,7 @@ const About = () => {
               music and I always look to meet new and exciting people to work
               with or for.
               <br />
-              My journey as a software engineer started in 2016, self-learning
+              My journey as a software engineer started in 2017, self-learning
               Python programming. Though, I couldn’t do much being an
               undergraduate in Civil Engineering. Fast forward to 2022, craving
               to bring ideas to life in a browser, I joined{" "}
@@ -38,11 +38,36 @@ const About = () => {
               >
                 Stutern&nbsp;
               </a>
-              Bootcamp to acquire training in Front-end Web Development. I was
-              appointed front-end Engineers group lead for the two main projects
-              built during the training process. I was also opportuned to
-              participate in 2022 Hacktoberfest, contributing to open source and
-              earning a badge from Digital Ocean.
+              Bootcamp to acquire training in Front-end Web Development after
+              being self taught on HTML and CSS. I was appointed front-end
+              Engineers group lead for the two main projects built during the
+              training. I was also opportuned to participate in 2022
+              Hacktoberfest, contributing to open source and earning a badge
+              each from{" "}
+              <a
+                href="https://www.docker.com/"
+                target="blank"
+                className="text-[#7600bc]"
+              >
+                Docker
+              </a>
+              ,{" "}
+              <a
+                href="https://www.appwrite.io/"
+                target="blank"
+                className="text-[#7600bc]"
+              >
+                Appwrite
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://www.digitalocean.com/go/developer-brand?utm_campaign=emea_brand_kw_en_cpc&utm_adgroup=digitalocean_exact_exact&_keyword=digitalocean&_device=c&_adposition=&utm_content=conversion&utm_medium=cpc&utm_source=google&gclid=Cj0KCQiAt66eBhCnARIsAKf3ZNHoRhunBe-Xr1HMLfZS0n0EOeO4xWU75QcZT41ykopST5dreS9cDOwaAri5EALw_wcB"
+                target="blank"
+                className="text-[#7600bc]"
+              >
+                Digital Ocean
+              </a>
+              .
             </h3>
           </div>
         </div>
