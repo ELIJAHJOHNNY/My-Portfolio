@@ -45,7 +45,7 @@ const About = () => {
               Hacktoberfest, contributing to open source and earning a badge
               each from{" "}
               <a
-                href="https://www.docker.com/"
+                href="https://drive.google.com/file/d/19JDyL3wTUdxI5gbnMCyk6Btygx9ZEh44/view?usp=sharing"
                 target="blank"
                 className="text-[#7600bc]"
               >
@@ -53,7 +53,7 @@ const About = () => {
               </a>
               ,{" "}
               <a
-                href="https://www.appwrite.io/"
+                href="https://drive.google.com/file/d/1aMNwOm7Qr5HNy78BKpkVpkVg0C0oMf7Z/view?usp=sharing"
                 target="blank"
                 className="text-[#7600bc]"
               >
@@ -61,7 +61,7 @@ const About = () => {
               </a>{" "}
               and{" "}
               <a
-                href="https://www.digitalocean.com/go/developer-brand?utm_campaign=emea_brand_kw_en_cpc&utm_adgroup=digitalocean_exact_exact&_keyword=digitalocean&_device=c&_adposition=&utm_content=conversion&utm_medium=cpc&utm_source=google&gclid=Cj0KCQiAt66eBhCnARIsAKf3ZNHoRhunBe-Xr1HMLfZS0n0EOeO4xWU75QcZT41ykopST5dreS9cDOwaAri5EALw_wcB"
+                href="https://drive.google.com/file/d/1ugN11rxawExXWjy-mJmB3TGyL09sHdiE/view?usp=sharing"
                 target="blank"
                 className="text-[#7600bc]"
               >

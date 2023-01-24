@@ -95,11 +95,11 @@ const HandoutDetails = () => {
           people who might need them. In order to use features offered by the
           platform, one have to create an account, get verified on their e-mail
           and sign in. Such user can now upload an item to be given out with
-          specified details given including images, the condition of the item
-          and their contact details. A user having an account on the platform
-          can also browse all available items on the platform and contact the
-          seller on any item of interest. The project was a housemanship program
-          organized by{" "}
+          specified details given, including but not limited to images, the
+          condition of the item and their contact details. A user having an
+          account on the platform can also browse all available items on the
+          platform and contact the seller on any item of interest. The project
+          was a housemanship program organized by{" "}
           <a
             href="https://stutern.com"
             target="blank"
@@ -107,8 +107,8 @@ const HandoutDetails = () => {
           >
             Stutern&nbsp;
           </a>{" "}
-          aimed at getting hands-on experience working on hypothetical products
-          that solve real-life problems.
+          aimed at getting hands-on experience working on a hypothetical product
+          that solve real-life problem.
         </p>
         <br />
         <p className="font-Raleway xs:text-[12px] md:text-[16px]">
@@ -193,8 +193,9 @@ const HandoutDetails = () => {
         </p>
         <ul className="font-Raleway xs:text-[12px] md:text-[16px] list-disc">
           <li className="font-[500]">
-            Ensuring a consistent coding style was adopted by all frontend
-            engineers working on the project across various editors and IDEs.
+            There was need for a consistent coding style to be adopted by all
+            frontend engineers working on the project across various editors and
+            IDEs.
           </li>{" "}
           <br />
           <div className="w-full xs:flex xs:flex-col-reverse md:flex-row justify-between">
@@ -211,8 +212,8 @@ const HandoutDetails = () => {
                 <p>
                   In order to avoid inconsistency in our coding style,
                   considering various developers from different locations across
-                  various IDEs were working on the project, this had to be
-                  implemented. Two major tools used to achieve this are:
+                  various IDEs were working on the project, I had to implement
+                  this. Two major tools used to achieve this are:
                 </p>
                 <ul className="xs:text-[12px] md:text-[16px] py-2">
                   <li>🔧 An IDE (I used VSCode).</li>
@@ -275,12 +276,12 @@ const HandoutDetails = () => {
             <div className="w-full md:border-l-4 md:border-l-[#bcc0c0] flex ">
               <div className="pl-2 font-Raleway xs:text-[12px] md:text-[16px]">
                 <p>
-                  The login page was designed to have the show/hide password
+                  I designed the login page to have the show/hide password
                   feature triggered on toggling the eye icon in the password
                   input. The login (Continue) button was also designed to be
                   disabled if the email and password inputs are empty, to avoid
-                  sending unnecessary data to the backend. A mobile screen was
-                  also designed to ensure the page is responsive. Tools used to
+                  sending unnecessary data to the backend. I also designed for a
+                  mobile screen to ensure the page is responsive. Tools used to
                   implement the login page design includes
                 </p>
                 <ul className="py-2">
@@ -360,15 +361,15 @@ const HandoutDetails = () => {
             <div className="w-full md:border-l-4 md:border-l-[#bcc0c0] flex ">
               <div className="pl-2 font-Raleway xs:text-[12px] md:text-[16px]">
                 <p>
-                  Designed a dropdown list of all countries and their respective
-                  country codes for the phone number input field. Validated the
-                  email and password inputs using Regex to ensure a correct
-                  email format is inputed by a user likewise ensuring the
-                  password pattern matches the requirement given by the UI/UX
-                  team. A guide is displayed as texts for users to know the
-                  required inputs. Lastly, the buttons were validated to ensure
-                  they are disabled until the required input fields are filled.
-                  Tools used to accomplish this includes:
+                  I designed a dropdown list of all countries and their
+                  respective country codes for the phone number input field.
+                  Validated the email and password inputs using Regex to ensure
+                  a correct email format is inputed by a user likewise ensuring
+                  the password pattern matches the requirement given by the
+                  UI/UX team. A guide is displayed as texts to prompt users to
+                  know the required inputs. Lastly, I validated the buttons to
+                  ensure they are disabled until the required input fields are
+                  filled. Tools I used to accomplish this includes:
                 </p>
                 <ul className="py-2">
                   <li>🔧 React Phone Number Input</li>
@@ -406,15 +407,16 @@ const HandoutDetails = () => {
             <div className="w-full md:border-l-4 md:border-l-[#bcc0c0] flex ">
               <div className="pl-2 font-Raleway xs:text-[12px] md:text-[16px]">
                 <p>
-                  A task was given to ensure users get a link in a template sent
-                  to thier email on creating an account to get verified and only
-                  through the link can they navigate to the verification success
-                  page. To do this, useParams which is a React Router hook was
-                  used to navigate to the verify email success page based on the
-                  user ID added in the url after being generated by the backend.
-                  It was first implemented on the verification success page then
-                  changes were made to the route path to cater for the
-                  additional information expected from the backend.
+                  A task was given to me to ensure users get a link in a
+                  template sent to thier email on creating an account to get
+                  verified and only through the link can they navigate to the
+                  verification success page. To do this, I made use of useParams
+                  which is a React Router hook to navigate to the verify email
+                  success page based on the user ID added in the url after being
+                  generated by the backend. It was first implemented on the
+                  verification success page then changes were made to the route
+                  path to cater for the additional information expected from the
+                  backend.
                 </p>
                 <p>
                   Click{" "}
@@ -478,8 +480,8 @@ const HandoutDetails = () => {
                 <p>
                   In order to get a feedback on whether a login or sign up is
                   succesful or failed and navigate to the respective page based
-                  on the network response received, the backend endpoint was
-                  integrated into the login and create account page. The
+                  on the network response received, I integrated the backend
+                  endpoint into the login and create account page. The
                   integration into the login page also ensured only an
                   authenticated user can login to the platform. To do this,
                   various tools were used, namely:
@@ -522,8 +524,8 @@ const HandoutDetails = () => {
             <div className="w-full md:border-l-4 md:border-l-[#bcc0c0] flex ">
               <div className="pl-2 font-Raleway xs:text-[12px] md:text-[16px]">
                 <p>
-                  Vanilla HTML and CSS inline styling were used to design the
-                  email template. The few tools used for this are:
+                  I made use of vanilla HTML and CSS inline styling to design
+                  the email template. The few tools used for this are:
                 </p>
                 <ul className="py-2">
                   <li>🔧 Figma</li>
@@ -559,13 +561,14 @@ const HandoutDetails = () => {
             <div className="w-full md:border-l-4 md:border-l-[#bcc0c0] flex ">
               <div className="pl-2 font-Raleway xs:text-[12px] md:text-[16px]">
                 <p>
-                  A task to implement the browse items page was assigned and the
-                  page was designed such that all items uploaded by users on the
-                  platform are displayed and filtered based on various
+                  A task to implement the browse items page was assigned to me
+                  and I designed the page such that all items uploaded by users
+                  on the platform are displayed and filtered based on various
                   categories. It was also designed such that a particular number
                   of items are displayed on load of the page with more items
-                  being loaded on click of the load more button. Tools used to
-                  accomplish this includes:
+                  being loaded on click of the load more button until there are
+                  no more items available. Tools used to accomplish this
+                  includes:
                 </p>
                 <ul className="py-2">
                   <li>🔧 Figma</li>
@@ -623,7 +626,7 @@ const HandoutDetails = () => {
       </div>
       <div className="w-[100%] flex-col h-auto py-[40px] flex items-center justify-center  ">
         <div className="w-[80%] border-[1px] border-[#7600bc] dark:border-[#bcc0c0] flex items-center justify-center"></div>
-        <div className="py-[40px] xs:w-[80%] md:w-[40%] flex justify-evenly items-center">
+        <div className="py-[25px] xs:w-[80%] md:w-[40%] flex justify-evenly items-center">
           <div className="rounded-full xs:p-2 md:p-4 bg-[#bcc0c0] flex items-center justify-center">
             <a href="https://github.com/ELIJAHJOHNNY" target="blank">
               <FaGithub className=" duration-300 text-black  rounded-lg cursor-pointer hover:text-[#7600bc] hover:scale-150" />
@@ -646,7 +649,7 @@ const HandoutDetails = () => {
           </div>
         </div>
         <div className="flex-col w-[80%] flex items-center justify-center">
-          <p className="font-Raleway text-center xs:text-[14px] md:text-[16px] text-[#7600bc] dark:text-[#bcc0c0] pt-4 font-[700] ">
+          <p className="font-Raleway text-center xs:text-[14px] md:text-[16px] text-[#7600bc] dark:text-[#bcc0c0] font-[700] ">
             {" "}
             Made with 💖 by Kugbiyi Elijah Johnny ©2022
           </p>
