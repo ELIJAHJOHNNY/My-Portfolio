@@ -21,7 +21,7 @@ const Works = () => {
       img: handout,
       details:
         "This platform allows people to give out useful but unwanted items for free or a give away price to others who may need them.",
-      link: "https://stutern-handout.web.app/",
+      link: "https://handout-stutern.web.app/",
       githubLink:
         "https://github.com/StuternHousemanship/HANDOUT-Frontend-Project-Team1.1.git",
       toolUsed1: "React",
