@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import DisplaySkills from "./DisplaySkills";
 import SoftSkills from "./SoftSkills";
 import Figma1 from "../assets/figma1.jpg";
+import typescript from "../assets/typescript.svg";
 import "./Skills.css";
 
 const Skills = () => {
@@ -67,6 +68,11 @@ const Skills = () => {
       id: 11,
       name: "Figma",
       img: Figma1,
+    },
+    {
+      id: 11,
+      name: "Typescript",
+      img: typescript,
     },
   ];
   return (
