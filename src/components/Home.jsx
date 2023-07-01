@@ -13,21 +13,6 @@ const Home = () => {
       className="w-[100%] flex flex-col justify-center items-center h-[100vh] relative dark:bg-black"
     >
       <DateView />
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjzFDPH_lrb5HO3ZoSSYhpAKFXjmZYcHKn5Q&usqp=CAU"
-        alt=""
-        className="xs:hidden md:block w-[100px] h-[100px] absolute left-[50px] top-[100px] dark:hidden "
-      />
-      {/* <img
-        alt=""
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjzFDPH_lrb5HO3ZoSSYhpAKFXjmZYcHKn5Q&usqp=CAU"
-        className="w-[100px] h-[100px] absolute left-[50px] bottom-[10px]"
-      /> */}
-      <img
-        src={bg}
-        alt=""
-        className="xs:hidden md:block w-[100px] h-[100px] absolute right-[50px] bottom-[10px] dark:hidden"
-      />
       <h3 className="font-extrabold xs:text-[18px] sm:text-[30px] font-ms text-center dark:text-[#bcc0c0]">
         Hi! I'm
       </h3>

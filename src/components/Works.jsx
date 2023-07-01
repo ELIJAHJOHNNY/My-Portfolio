@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import netfli2 from "../assets/netfli2.jpg";
 import commerce from "../assets/commerce.png";
 import handout from "../assets/handout.png";
+import soundzz from "../assets/soundzz.png";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 // import Typography from "@mui/material/Typography";
@@ -40,7 +41,7 @@ const Works = () => {
       details: `A Netflix clone created with 'The Movie Database' API which
       displays movies of various categories and has a search
       feature`,
-      link: "https://netflix-duplicate.netlify.app/",
+      link: "https://netphlix-duplicate.netlify.app/",
       githubLink: "https://github.com/ELIJAHJOHNNY/GROUP-A-PROJECT.git",
       toolUsed1: "React",
       toolUsed2: "Tailwind",
@@ -52,17 +53,32 @@ const Works = () => {
     },
     {
       id: 3,
-      name: "SHOP-IT",
-      img: commerce,
-      details: "A mini E-commerce app created with Commerce.js API",
-      link: "https://shop-it-commerce.netlify.app",
-      githubLink: "https://github.com/ELIJAHJOHNNY/E-commerce.git",
+      name: "SOUNDZZ",
+      img: soundzz,
+      details:
+        "A music player built with the Spotify API that gets a user's playlists and plays the songs",
+      link: "https://soundzz.netlify.app",
+      githubLink: "https://github.com/ELIJAHJOHNNY/Soundz",
       toolUsed1: "React",
-      toolUsed3: "Material UI",
+      toolUsed2: "Material UI",
+      toolUsed3: "Tailwind",
       toolUsed4: "Axios",
-      toolUsed5: "Commerce.JS API",
+      toolUsed5: "Spotify API",
       moreDetails: "/project-details",
     },
+    // {
+    //   id: 3,
+    //   name: "SHOP-IT",
+    //   img: commerce,
+    //   details: "A mini E-commerce app created with Commerce.js API",
+    //   link: "https://shop-it-commerce.netlify.app",
+    //   githubLink: "https://github.com/ELIJAHJOHNNY/E-commerce.git",
+    //   toolUsed1: "React",
+    //   toolUsed3: "Material UI",
+    //   toolUsed4: "Axios",
+    //   toolUsed5: "Commerce.JS API",
+    //   moreDetails: "/project-details",
+    // },
   ];
 
   return (
