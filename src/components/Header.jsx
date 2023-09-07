@@ -161,7 +161,7 @@ function Header({ Link }) {
           <button className="bg-[#7600bc] xs:hidden sm:block mr-[40px] text-white font-[Raleway] py-2 px-3 rounded-[4px] text-[12px] font-[700] tracking-wide ">
             <a
               target="blank"
-              href="https://drive.google.com/file/d/1vPKXZWx2NmzIEpC2CCIPZ6Tdsf3DdSPT/view?usp=sharing"
+              href="https://drive.google.com/file/d/1VvJsNfE7YTopV5Th464AKijowwf_V-Bv/view?usp=sharing"
             >
               RESUME
             </a>
@@ -425,7 +425,7 @@ function Header({ Link }) {
               <button className="bg-[#7600bc] text-white font-[Raleway] py-2 px-3 rounded-[4px] text-[20px] font-[700] tracking-wide ">
                 <a
                   target="blank"
-                  href="https://drive.google.com/file/d/1vPKXZWx2NmzIEpC2CCIPZ6Tdsf3DdSPT/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1VvJsNfE7YTopV5Th464AKijowwf_V-Bv/view?usp=sharing"
                 >
                   RESUME
                 </a>
