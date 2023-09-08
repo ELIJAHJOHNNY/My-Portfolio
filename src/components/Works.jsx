@@ -34,23 +34,23 @@ const Works = () => {
       // toolUsed7: "Firebase",
       moreDetails: "/handout-details",
     },
-    // {
-    //   id: 2,
-    //   name: "NETFLIX",
-    //   img: netfli2,
-    //   details: `A Netflix clone created with 'The Movie Database' API which
-    //   displays movies of various categories and has a search
-    //   feature`,
-    //   link: "https://netphlix-duplicate.netlify.app/",
-    //   githubLink: "https://github.com/ELIJAHJOHNNY/GROUP-A-PROJECT.git",
-    //   toolUsed1: "React",
-    //   toolUsed2: "Tailwind",
-    //   toolUsed3: "MUI",
-    //   toolUsed4: "Axios",
-    //   toolUsed5: "TMDB API",
-    //   toolUsed6: "Redux",
-    //   moreDetails: "/project-details",
-    // },
+    {
+      id: 2,
+      name: "NETFLIX",
+      img: netfli2,
+      details: `A Netflix clone created with 'The Movie Database' API which
+      displays movies of various categories and has a search
+      feature`,
+      link: "https://netphlix-duplicate.netlify.app/",
+      githubLink: "https://github.com/ELIJAHJOHNNY/GROUP-A-PROJECT.git",
+      toolUsed1: "React",
+      toolUsed2: "Tailwind",
+      toolUsed3: "MUI",
+      toolUsed4: "Axios",
+      toolUsed5: "TMDB API",
+      toolUsed6: "Redux",
+      moreDetails: "/project-details",
+    },
     {
       id: 3,
       name: "SOUNDZZ",
