@@ -21,59 +21,28 @@ const About = () => {
             ABOUT ME
           </h1>
           <h3 className="font-semibold font-Raleway dark:text-black xs:text-[12px] sm:text-[14px] ">
-            Hi! My name is Elijah, a confident, naturally curious Frontend
-            Developer, perpetually working on improving my chops one design
-            problem at a time, an advocate of the AGILE manifesto, a lover of
-            art and music, and I always look to meet new and exciting people to
-            work with or for.
-            <br />
-            My journey as a software engineer started in 2017, self-learning
-            Python programming. Though, I could not do much being an
-            undergraduate in Civil Engineering. Fast forward to 2022, craving to
-            bring ideas to life in a browser, I joined{" "}
+            Hello, I'm Elijah, a passionate and naturally curious Frontend
+            Engineer with a penchant for solving design challenges one elegant
+            solution at a time. I'm not just a coder, I'm an advocate of the
+            AGILE manifesto, a connoisseur of art and music, and a firm believer
+            in the power of collaboration. My journey into software engineering
+            began in 2018, transitioning from a Civil Engineering background.
+            Since then, I've evolved into a skilled Frontend Developer,
+            certified through a rigorous Bootcamp at{" "}
             <a
               href="https://stutern.com"
               target="blank"
               className="text-[#7600bc]"
             >
-              Stutern&nbsp;
+              Stutern
             </a>
-            Bootcamp to get certified as a Frontend Web Developer. I was
-            appointed Frontend Engineers group lead for the two main projects
-            built during the training. I managed the code base using Git for
-            Version control while building multiple layouts integrated with
-            optimum functionalities, integrating several APIs per need. I was
-            also opportune to participate in the 2022 Hacktoberfest,
-            contributing to open source and earning a badge, each from{" "}
-            <a
-              href="https://drive.google.com/file/d/19JDyL3wTUdxI5gbnMCyk6Btygx9ZEh44/view?usp=sharing"
-              target="blank"
-              className="text-[#7600bc]"
-            >
-              Docker
-            </a>
-            ,{" "}
-            <a
-              href="https://drive.google.com/file/d/1aMNwOm7Qr5HNy78BKpkVpkVg0C0oMf7Z/view?usp=sharing"
-              target="blank"
-              className="text-[#7600bc]"
-            >
-              Appwrite
-            </a>{" "}
-            and{" "}
-            <a
-              href="https://drive.google.com/file/d/1ugN11rxawExXWjy-mJmB3TGyL09sHdiE/view?usp=sharing"
-              target="blank"
-              className="text-[#7600bc]"
-            >
-              Digital Ocean
-            </a>
-            . I have worked as a Frontend Developer for Infinion Technologies, a
-            certified Microsoft partner, where I worked with diverse teams in
-            Product design, backend, Data and AI, Cybersecurity, and
-            Infrastructure to build applications that offer a custom solution to
-            Enterprise businesses, particularly organizations in the Financial
-            sector of Africa's economy.
+            . Currently, I work as a Frontend Developer at Infinion
+            Technologies, a Microsoft certified partner, where I collaborate
+            with diverse teams to create custom solutions for enterprise
+            businesses, particularly in Africa's financial sector. I'm driven by
+            continuous learning and always eager to connect with new and
+            exciting people for potential collaborations. Thank you for visiting
+            my portfolio, and let's explore new horizons together.
           </h3>
         </div>
       </div>

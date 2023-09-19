@@ -3,12 +3,12 @@ import { useNavigate } from "react-router-dom";
 import "./Works.css";
 import { FaGithub } from "react-icons/fa";
 import netfli2 from "../assets/netfli2.jpg";
-import commerce from "../assets/commerce.png";
 import handout from "../assets/handout.png";
 import soundzz from "../assets/soundzz.png";
+import expense from "../assets/expense-tracker.png";
+import myTask from "../assets/myTask.png";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
-// import Typography from "@mui/material/Typography";
 import CardMedia from "@mui/material/CardMedia";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
@@ -66,19 +66,30 @@ const Works = () => {
       toolUsed5: "Spotify API",
       moreDetails: "/project-details",
     },
-    // {
-    //   id: 3,
-    //   name: "SHOP-IT",
-    //   img: commerce,
-    //   details: "A mini E-commerce app created with Commerce.js API",
-    //   link: "https://shop-it-commerce.netlify.app",
-    //   githubLink: "https://github.com/ELIJAHJOHNNY/E-commerce.git",
-    //   toolUsed1: "React",
-    //   toolUsed3: "Material UI",
-    //   toolUsed4: "Axios",
-    //   toolUsed5: "Commerce.JS API",
-    //   moreDetails: "/project-details",
-    // },
+    {
+      id: 4,
+      name: "EXPENSE TRACKER",
+      img: expense,
+      details:
+        "A platform to track one's expenses relative to income. It was designed such that any user of the platform can sign in with their personal gmail and have all tracked expenses saved for the user even when a user logs out of the platform",
+      link: "https://xpencetrack.web.app/",
+      githubLink: "https://github.com/ELIJAHJOHNNY/expense-tracker",
+      toolUsed1: "React",
+      toolUsed2: "Firebase",
+      toolUsed3: "Tailwind",
+      moreDetails: "/project-details",
+    },
+    {
+      id: 5,
+      name: "MY TASKS",
+      img: myTask,
+      details: "A platform to manage tasks using a calendar.",
+      link: "https://schoolinkatodo.web.app/",
+      githubLink: "https://github.com/ELIJAHJOHNNY/task-manager",
+      toolUsed1: "React",
+      toolUsed3: "JSON placeholder",
+      moreDetails: "/project-details",
+    },
   ];
 
   return (

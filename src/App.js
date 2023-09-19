@@ -1,6 +1,5 @@
 import { useState, useEffect, createContext } from "react";
 import { BrowserRouter } from "react-router-dom";
-// import { HashLink as Link } from "react-router-hash-link";
 import AllPages from "./components/AllPages";
 import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
@@ -8,14 +7,6 @@ import { ReactComponent as LoadingIcon } from "./assets/loadingIcon.svg";
 
 const HandoutDetails = React.lazy(() => import("./components/HandoutDetails"));
 const ProjectDetails = React.lazy(() => import("./components/ProjectDetails"));
-// import Home from "./components/Home";
-// import Header from "./components/Header";
-// import About from './components/About';
-// import Skills from "./components/Skills";
-// import Works from './components/Works';
-// import Contact from "./components/Contact";
-// import Router from "./Router"
-// import Footer from "./components/Footer";
 
 
 export const ThemeContext = createContext(null);
@@ -75,3 +66,27 @@ function App() {
 }
 
 export default App;
+
+  // const getTime = () => {
+  //   const now: Date = new Date();
+  //   const options: Intl.DateTimeFormatOptions = {
+  //     year: "numeric",
+  //     month: "long",
+  //   };
+  //   const formattedDate: string = now.toLocaleDateString(undefined, options);
+  //   return formattedDate;
+  // };
+
+  // const currentDate = new Date();
+  // const tenDays = Array.from({ length: 10 }, (_, index) => {
+  //   const date = new Date(currentDate);
+  //   date.setDate(currentDate.getDate() + index);
+  //   const dayOfWeek = date.toLocaleDateString("en-US", { weekday: "short" });
+  //   const dayOfMonth = date.getDate();
+  //   return (
+  //     <div className="flex flex-col items-center justify-center font-workSans font-semibold text-[14px] ">
+  //       <p>{dayOfWeek}</p>
+  //       <p>{dayOfMonth}</p>
+  //     </div>
+  //   );
+  // });

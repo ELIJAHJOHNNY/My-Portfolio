@@ -15,6 +15,11 @@ const Contact = () => {
   const [validEmail, setValidEmail] = useState(false);
   const [emailFocus, setEmailFocus] = useState(false);
 
+  const getYear = () => {
+    const currentDate = new Date();
+    return currentDate.getFullYear();
+  };
+
   useEffect(() => {
     const emailRegex =
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
@@ -167,7 +172,7 @@ const Contact = () => {
         <div className="flex-col w-[80%] flex items-center justify-center">
           <p className="font-Raleway text-center xs:text-[14px] md:text-[16px] text-[#7600bc] dark:text-[#bcc0c0] font-[700] ">
             {" "}
-            Made with 💖 by Kugbiyi Elijah Johnny ©2022
+            Made with 💖 by Kugbiyi Elijah Johnny 2023
           </p>
         </div>
       </div>
