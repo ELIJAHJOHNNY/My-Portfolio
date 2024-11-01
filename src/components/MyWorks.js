@@ -4,8 +4,57 @@ import soundzz from "../assets/soundzz.png";
 import expense from "../assets/expense-tracker.png";
 import myTask from "../assets/myTask.png";
 import qrCode from "../assets/qr-code.png";
+import infinion from "../assets/infinionsite.png";
+import unikrib from "../assets/unikr.png";
 
 export const myWorks = [
+  {
+    id: 7,
+    name: "INFINION",
+    img: infinion,
+    details:
+      "This is a staging link of the official website of Infinion Technologies",
+    link: "https://www.infinion.co/",
+    githubLink:
+      "",
+    toolsUsed: [
+      "Next.js",
+      "Tailwind",
+      "AI",
+      "Typescript"
+    ],
+   
+  },
+  {
+    id: 8,
+    name: "UNIKRIB",
+    img: unikrib,
+    details:
+      "This is a platform that connects students in universities within Nigeria to service providers and agents to rent an apartment.",
+    link: "https://www.unikribafrica.com/",
+    githubLink:
+      "",
+    toolsUsed: [
+      "Next.js",
+      "Tailwind",
+      "AI",
+      "Axios",
+      "Typescript",
+      "Redux Toolkit"
+    ],
+   
+  },
+  {
+    id: 3,
+    name: "SOUNDZZ",
+    img: soundzz,
+    details:
+      "A music player built with the Spotify API that gets a user's playlists and plays the songs",
+    link: "https://soundzz.netlify.app",
+    githubLink: "https://github.com/ELIJAHJOHNNY/Soundz",
+    moreDetails: "/project-details",
+    toolsUsed: ["React", "Tailwind", "Material UI", "Axios", "Spotify API"],
+  },
     {
       id: 1,
       name: "HANDOUT",
@@ -37,17 +86,7 @@ export const myWorks = [
       githubLink: "https://github.com/ELIJAHJOHNNY/GROUP-A-PROJECT.git",
       toolsUsed: ["React", "Tailwind", "MUI", "Axios", "TMDB API", "Redux"],
     },
-    {
-      id: 3,
-      name: "SOUNDZZ",
-      img: soundzz,
-      details:
-        "A music player built with the Spotify API that gets a user's playlists and plays the songs",
-      link: "https://soundzz.netlify.app",
-      githubLink: "https://github.com/ELIJAHJOHNNY/Soundz",
-      moreDetails: "/project-details",
-      toolsUsed: ["React", "Tailwind", "Material UI", "Axios", "Spotify API"],
-    },
+    
     {
       id: 4,
       name: "EXPENSE TRACKER",

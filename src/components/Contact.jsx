@@ -175,7 +175,7 @@ const Contact = () => {
           <div className="flex-col w-[80%] flex items-center justify-center">
             <p className="font-Raleway text-center xs:text-[14px] md:text-[16px] text-[#7600bc] dark:text-[#bcc0c0] font-[700] ">
               {" "}
-              Made with 💖 by Kugbiyi Elijah Johnny 2023
+              Made with 💖 by Kugbiyi Elijah Johnny {getYear()}
             </p>
           </div>
         </div>

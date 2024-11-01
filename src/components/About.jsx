@@ -29,7 +29,7 @@ const About = () => {
                 elegant solution at a time. I'm not just a coder, I'm an
                 advocate of the AGILE manifesto, a connoisseur of art and music,
                 and a firm believer in the power of collaboration. My journey
-                into software engineering began in 2018, transitioning from a
+                into software engineering began in 2021, transitioning from a
                 Civil Engineering background. Since then, I've evolved into a
                 skilled Frontend Developer, certified through a rigorous
                 Bootcamp at{" "}
@@ -46,8 +46,9 @@ const About = () => {
                 businesses, particularly in Africa's financial sector. I'm
                 driven by continuous learning and always eager to connect with
                 new and exciting people for potential collaborations. Thank you
-                for visiting my portfolio, and let's explore new horizons
-                together.
+                for visiting my portfolio, which reflects my learning journey
+                with some of my basic works, my best work awaits discussion in
+                interviews. Let's explore new horizons together.
               </h3>
             </div>
           </div>
